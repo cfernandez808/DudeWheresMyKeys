@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -13,9 +13,11 @@
 		96342477256A5399009AE1BA /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 96342475256A5399009AE1BA /* Main.storyboard */; };
 		96342479256A539A009AE1BA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 96342478256A539A009AE1BA /* Assets.xcassets */; };
 		9634247C256A539A009AE1BA /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9634247A256A539A009AE1BA /* LaunchScreen.storyboard */; };
+		C992B1F791FEF3AEDC0D79FD /* Pods_DudeWheresMyKeys.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ACE21BD376DF3783AC7076C6 /* Pods_DudeWheresMyKeys.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		32DCF5CB456E977FF90E44B8 /* Pods-DudeWheresMyKeys.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DudeWheresMyKeys.debug.xcconfig"; path = "Target Support Files/Pods-DudeWheresMyKeys/Pods-DudeWheresMyKeys.debug.xcconfig"; sourceTree = "<group>"; };
 		9634246C256A5399009AE1BA /* DudeWheresMyKeys.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DudeWheresMyKeys.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9634246F256A5399009AE1BA /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		96342471256A5399009AE1BA /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -24,6 +26,8 @@
 		96342478256A539A009AE1BA /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		9634247B256A539A009AE1BA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		9634247D256A539A009AE1BA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		ACE21BD376DF3783AC7076C6 /* Pods_DudeWheresMyKeys.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_DudeWheresMyKeys.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		DC489E3C9C2D01AD84DBC863 /* Pods-DudeWheresMyKeys.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DudeWheresMyKeys.release.xcconfig"; path = "Target Support Files/Pods-DudeWheresMyKeys/Pods-DudeWheresMyKeys.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,17 +35,29 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C992B1F791FEF3AEDC0D79FD /* Pods_DudeWheresMyKeys.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		0F868B65530B5CEFEA150B03 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				32DCF5CB456E977FF90E44B8 /* Pods-DudeWheresMyKeys.debug.xcconfig */,
+				DC489E3C9C2D01AD84DBC863 /* Pods-DudeWheresMyKeys.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
 		96342463256A5399009AE1BA = {
 			isa = PBXGroup;
 			children = (
 				9634246E256A5399009AE1BA /* DudeWheresMyKeys */,
 				9634246D256A5399009AE1BA /* Products */,
+				0F868B65530B5CEFEA150B03 /* Pods */,
+				FA0D418CD583A364D6365B51 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -67,6 +83,14 @@
 			path = DudeWheresMyKeys;
 			sourceTree = "<group>";
 		};
+		FA0D418CD583A364D6365B51 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				ACE21BD376DF3783AC7076C6 /* Pods_DudeWheresMyKeys.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -74,9 +98,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 96342480256A539A009AE1BA /* Build configuration list for PBXNativeTarget "DudeWheresMyKeys" */;
 			buildPhases = (
+				25AFB1301751920A7BE3FFF9 /* [CP] Check Pods Manifest.lock */,
 				96342468256A5399009AE1BA /* Sources */,
 				96342469256A5399009AE1BA /* Frameworks */,
 				9634246A256A5399009AE1BA /* Resources */,
+				91B6B313DE5374A4AA41E73F /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -131,6 +157,48 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		25AFB1301751920A7BE3FFF9 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-DudeWheresMyKeys-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		91B6B313DE5374A4AA41E73F /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-DudeWheresMyKeys/Pods-DudeWheresMyKeys-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-DudeWheresMyKeys/Pods-DudeWheresMyKeys-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-DudeWheresMyKeys/Pods-DudeWheresMyKeys-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		96342468256A5399009AE1BA /* Sources */ = {
@@ -216,7 +284,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 14.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.1;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -271,7 +339,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 14.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.1;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
@@ -283,6 +351,7 @@
 		};
 		96342481256A539A009AE1BA /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 32DCF5CB456E977FF90E44B8 /* Pods-DudeWheresMyKeys.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -302,6 +371,7 @@
 		};
 		96342482256A539A009AE1BA /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = DC489E3C9C2D01AD84DBC863 /* Pods-DudeWheresMyKeys.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
